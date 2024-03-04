@@ -1,0 +1,73 @@
+/*	Body of Site	*/
+body
+{
+	/*background-image: url('background.jpg');
+	background-size: cover;
+	
+	width: 100%;
+	height: 100%;*/
+	background-color: white;
+}
+
+ul 
+{
+	list-style-type: none;
+}
+
+/*	Site Logo	*/
+.homelogo
+{
+	/*position: fixed;*/
+	max-height: 100px;
+	transition: transform 0.9s;
+}
+
+.homelogo:hover
+{
+	transform: rotate(360deg);
+	/*transform: scale(1.1);*/
+}
+
+/*	Site Navigation	*/
+nav
+{
+	position: relative;
+	min-height: 120px;
+}
+
+nav.sitenavigation a:link
+{
+	text-decoration: none;
+	color: black;
+}
+
+nav.sitenavigation a:visited
+{
+	color: black;
+}
+
+nav.sitenavigation li.navlogo
+{
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -26px;
+	border-radius: 19px;
+	/*opacity: 50%;*/
+}
+
+.navcampindex
+{
+	position: absolute;
+	top: 25px;
+	right: 35px;
+	font-size: 25px;
+	font-family: 'Cutive Mono';
+	
+}
+
+.navabout:hover
+{
+	transform: scale(1.1);
+}
+
+
