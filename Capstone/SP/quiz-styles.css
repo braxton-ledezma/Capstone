@@ -1,0 +1,57 @@
+body 
+{
+	margin: 0;
+	padding: 0;
+}
+
+/************************************	Styles The Whole Form	************************************/
+
+form
+{
+	display: flex;
+	border: 2px solid red;
+	padding: 25px;
+	justify-content: center;
+    align-items: center;
+	
+	margin: 50px;
+}
+
+fieldset
+{
+	max-width: 80%;
+	border-radius: 12px;
+	text-align: center;
+}
+
+[class^="q-"]:before /*	adds in the required * */
+{
+	content: "* ";
+	color: red;
+}	
+
+
+/************************************	Styles Inividual Questions	************************************/
+.Starter-Page
+{
+	display: flex;
+	padding: 50px;
+}
+
+[class^="question-"]
+{
+	display: none;
+	justify-content: center;
+    align-items: center;
+	
+	height: 100%;
+	width: 110%;
+	
+	left: 150px;
+}
+
+[id^="a-"] /* aligns answers inside of each field */
+{
+	display: block;
+	text-align: left;
+}
