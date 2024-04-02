@@ -6,38 +6,6 @@
 	<title>Quiz</title>
 	<link rel="icon" href="images/logoSSS.png" type="image/png">
 	<link rel="stylesheet" href="quiz-styles.css">
-	<!--<style>
-    legend {
-	  text-align: center;
-	}
-	form label{
-		text-align: left;
-		display: block;
-		position: relative;
-	}
-	.questionBox {
-	   max-width: 500px;
-	   postion: absolute;
-	   margin-left: 25%;
-	}
-	
-	form 
-	{
-		position: relative;
-		display: flex;   
-		justify-content: center;
-		align-items: center;
-
-	 } 
- <!--.question2, .question3, .question4, .question5, .question6, .question7, .question8, .question9, .question10, 
- .button2, .button3, .button4, .button5, .button6, .button7, .button8,.button9, .button10, .finalResults
-  [class^="question"] [class^="button"], .finalResults
-  {
-    display: none;
-  }
-  
-</style>-->
-	
 	<!--<link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine|Allison|Molle|Playfair Display|Cutive Mono">  -->
  </head>
@@ -48,10 +16,12 @@
 	<form>
 		<fieldset class="Starter-Page">
 			<legend>Get Ready For The Quiz</legend>
-			<label for="name">Name</label>
-				<input type="text" id="name" name="name" placeholder="First and Last Name">
-				
-				<input type="submit" value="Begin" onclick="validateForm()">
+			<label>Once you begin the quiz, you must finish it before exiting!</label>
+			<div class="input-group">
+				<label for="name">Name:</label>
+					<input type="text" id="name" name="name" placeholder="First and Last Name">
+			</div>
+				<input type="button" value="Begin" onclick="return validateForm()">
 		</fieldset>
 		
 		<fieldset class="question-1">
@@ -59,12 +29,12 @@
 			As you check on the kids room you see one of them on the ground. What do you do?</legend>
 				
 			<label id="a-1" for="">
-				<input type="radio" name="answer" value="a1" required>
+				<input type="radio" name="answer" value="a1">
 				Walk away from child		
 			</label>
 			
 			<label id="a-2" for="">
-				  <input type="radio" name="answer" value="a2">
+				  <input type="radio" name="answer" value="a2" id="correct-1">
 				  Walk over to check on the child, and you will have to add grindrails in the morning		
 			</label>
 			
@@ -77,7 +47,7 @@
 				  <input type="radio" name="answer" value="a4">
 				  Go get another counselor to do it for you		
 			</label>
-				<input type="submit" value="Next" onclick="nextQuestion2()">
+				<input type="button" value="Next" onclick="validateAnswer1()">
 		</fieldset>
 		
 		
@@ -86,7 +56,7 @@
 			they left their shoes at the kids room. Which you are all the way at the barn. What will you do?</legend>
 				
 			<label id="a-5" for="">
-				<input type="radio" name="answer" value="a5" required>
+				<input type="radio" name="answer" value="a5" id="correct-2">
 				Accompany the child to retrieve their shoes		
 			</label>
 			
@@ -104,7 +74,223 @@
 				  <input type="radio" name="answer" value="a8">
 				  Leave the children unsupervised at the barn while you go fetch their shoes		
 			</label>
-				<input type="submit" value="Next" onclick="nextQuestion3()">
+				<input type="button" value="Next" onclick="validateAnswer2()">
+		</fieldset>
+		
+		
+		<fieldset class="question-3">
+			<legend class="q-3">3. You are having a child having trouble table etiquette. 
+			He's running around the table, play around, he's is being irritaing, and not 
+			using any manners at the table. What do you do?</legend>
+				
+			<label id="a-9" for="">
+				<input type="radio" name="answer" value="a9">
+				Make excuses for the child's poor manners rather than addressing the issue directly		
+			</label>
+			
+			<label id="a-10" for="">
+				  <input type="radio" name="answer" value="a10">
+				  Blame others or external factors for the child's lack of table manners.		
+			</label>
+			
+			<label id="a-11" for="">
+				  <input type="radio" name="answer" value="a11" id="correct-3">
+				  Implement consequences for continued poor behavior, such as a temporary loss of fun activity		
+			</label>
+			
+			<label id="a-12" for="">
+				  <input type="radio" name="answer" value="a12">
+				  Criticize the child harshly or use negative language to address the issue.		
+			</label>
+				<input type="button" value="Next" onclick="validateAnswer3()">
+		</fieldset>
+		
+		<fieldset class="question-4">
+			<legend class="q-4">4. Out of these answers. Which one is wrong for handling campfire?</legend>
+				
+			<label id="a-13" for="">
+				<input type="radio" name="answer" value="a13">
+				Use only established fire rings.
+			</label>
+			
+			<label id="a-14" for="">
+				  <input type="radio" name="answer" value="a14">
+				  Keep the fire small so that there are no high flames(3 foot maximum)		
+			</label>
+			
+			<label id="a-15" for="">
+				  <input type="radio" name="answer" value="a15">
+				  Use dead wood for your fire and never cut down live trees or branches		
+			</label>
+			
+			<label id="a-16" for="">
+				  <input type="radio" name="answer" value="a16" id="correct-4">
+				  Start a campfire during windy conditions, increasing the risk of it spreading out of control		
+			</label>
+				<input type="button" value="Next" onclick="validateAnswer4()">
+		</fieldset>
+		
+		<fieldset class="question-5">
+			<legend class="q-5">5. There is a child that comes up with a sickness. What would you do?</legend>
+				
+			<label id="a-17" for="">
+				<input type="radio" name="answer" value="a17">
+				Allow the sick child to continue participating in camp activities without restriction
+			</label>
+			
+			<label id="a-18" for="">
+				  <input type="radio" name="answer" value="a18">
+				  Ignore the child's sickness and assume it will resolve on its own		
+			</label>
+			
+			<label id="a-19" for="">
+				  <input type="radio" name="answer" value="a19" id="correct-5">
+				  Report to the Camp Nurse or Health Director		
+			</label>
+			
+			<label id="a-20" for="">
+				  <input type="radio" name="answer" value="a20">
+				  Delay seeking medical attention or assistance for the sick child		
+			</label>
+				<input type="button" value="Next" onclick="validateAnswer5()">
+		</fieldset>
+		
+		<fieldset class="question-6">
+			<legend class="q-6">6. You have taken the children outside to do an activity. 
+			As you are done and about to walk back to the Dining Hall, you do a head count 
+			and notice one of the kids are missing. What do you do?</legend>
+				
+			<label id="a-21" for="">
+				<input type="radio" name="answer" value="a21">
+				Disregard the missing child and proceed with the group back to the Dining Hall
+			</label>
+			
+			<label id="a-22" for="">
+				  <input type="radio" name="answer" value="a22">
+				  Leave the rest of the group unattended while you search for the missing child		
+			</label>
+			
+			<label id="a-23" for="">
+				  <input type="radio" name="answer" value="a23">
+				  Assume the child will find their own way back to the Dining Hall without assistance		
+			</label>
+			
+			<label id="a-24" for="">
+				  <input type="radio" name="answer" value="a24" id="correct-6">
+				  Notify the Head Couselor immediately. The Head Counselor will take the necessary steps regarding a missing camper	
+			</label>
+				<input type="button" value="Next" onclick="validateAnswer6()">
+		</fieldset>
+		
+		<fieldset class="question-7">
+			<legend class="q-7">7. Out of these answers. Which one of is wrong for you to handle a child with homesickness? </legend>
+				
+			<label id="a-25" for="">
+				<input type="radio" name="answer" value="a25" id="correct-7">
+				Use your phone to call or text camper parents
+			</label>
+			
+			<label id="a-26" for="">
+				  <input type="radio" name="answer" value="a26">
+				  Remind the child that they are here just “x” number more days and will go after doing fun activities		
+			</label>
+			
+			<label id="a-27" for="">
+				  <input type="radio" name="answer" value="a27">
+				  Stay awake till campers are all asleep, the homesick child will feel comforted that you are awake too		
+			</label>
+			
+			<label id="a-28" for="">
+				  <input type="radio" name="answer" value="a28">
+				  Empathize with the campers feelings	
+			</label>
+				<input type="button" value="Next" onclick="validateAnswer7()">
+		</fieldset>
+		
+		<fieldset class="question-8">
+			<legend class="q-8">8. Now that you've done a little bit of outdoor cooking, which of the 
+			following is <b>NOT</b> a way for essence the success of the meal?</legend>
+				
+			<label id="a-29" for="">
+				<input type="radio" name="answer" value="a29">
+				Have a menu that every will like and be aware of any allergies in your group
+			</label>
+			
+			<label id="a-30" for="">
+				  <input type="radio" name="answer" value="a30" id="correct-8">
+				 Judging the success of the meal by how many times the chef checked their phone while cooking		
+			</label>
+			
+			<label id="a-31" for="">
+				  <input type="radio" name="answer" value="a31">
+				  Keep the menu imple. Cook hot dog, hamburger, soup, or toast, sandwiches as your first experience.		
+			</label>
+			
+			<label id="a-32" for="">
+				  <input type="radio" name="answer" value="a32">
+				  Dont try items that require long and patient tending, or are complex menus for the first experience	
+			</label>
+				<input type="button" value="Next" onclick="validateAnswer8()">
+		</fieldset>
+		
+		<fieldset class="question-9">
+			<legend class="q-9">9. As a Counselor it is your join to follow the camp philosophy. Which one of 
+			these is not the 3 philosophy of camping?</legend>
+				
+			<label id="a-33" for="">
+				<input type="radio" name="answer" value="a33">
+				Prepare to prevent rather than patch-up!
+			</label>
+			
+			<label id="a-34" for="">
+				  <input type="radio" name="answer" value="a34" id="correct-9 ">
+				 Watch the kids and do whats right for the money		
+			</label>
+			
+			<label id="a-35" for="">
+				  <input type="radio" name="answer" value="a35">
+				  Camp is for the Camper, not the Counselor		
+			</label>
+			
+			<label id="a-36" for="">
+				  <input type="radio" name="answer" value="a36">
+				  Supervision is full time responsibility!
+			</label>
+				<input type="button" value="Next" onclick="validateAnswer9()">
+		</fieldset>
+		
+		<fieldset class="question-10">
+			<legend class="q-10">10. You are sitting on the sideline as you are watching the 
+			children have fun in the activity. One of the children runs up and askes you about your shoes. 
+			Meaning why is there a twisty tie on it. What do you tell her?</legend>
+				
+			<label id="a-37" for="">
+				<input type="radio" name="answer" value="a37">
+				Ignore the question and quickly change the subject
+			</label>
+			
+			<label id="a-38" for="">
+				  <input type="radio" name="answer" value="a38" id="correct-10">
+				 Pretend to be preoccupied with something else, avoiding interaction with the child		
+			</label>
+			
+			<label id="a-39" for="">
+				  <input type="radio" name="answer" value="a39">
+				  Explain to her that the twisty tie is a symbol of missing someone you know. It could be a family member or friend		
+			</label>
+			
+			<label id="a-40" for="">
+				  <input type="radio" name="answer" value="a40">
+				 Glance at the child briefly, then resume watching the activity without acknowledging the question
+			</label>
+				<input type="button" value="Next" onclick="validateAnswer10()">
+		</fieldset>
+		
+		<fieldset class="summary">
+			<legend class="q-2">Below is your score!</legend>
+			<p id="final-results"></p>
+			<p><a href="SSSPage.html">Return Home</a></p>
+				
 		</fieldset>
 	</form>
 	
