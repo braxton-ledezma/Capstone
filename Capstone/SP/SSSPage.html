@@ -65,9 +65,10 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>-->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-
+<script>
+//part of google maps
+(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>
 
 <script>
 /************************************	Menu Icon Animation	***********************************/
@@ -102,24 +103,31 @@
 /************************************	Google Map	***********************************/
 	let map;
 
-    async function initMap() {
-      const position = { lat: 41.42457414942667, lng: -83.94126615802391 };
+	async function initMap() {
+	  // The location of Uluru
+	  const position = { lat: 41.42457414942667, lng: -83.94126615802391 };
+	  // Request needed libraries.
+	  //@ts-ignore
+	  const { Map } = await google.maps.importLibrary("maps");
+	  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-      // Create a new map centered at the specified position
-      map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 18,
-        center: position,
-        mapTypeId: google.maps.MapTypeId.SATELLITE,
-        mapId: "DEMO_MAP_ID",
-      });
+	  // The map, centered at Uluru
+	  map = new Map(document.getElementById("map"), {
+		zoom: 18,
+		center: position,
+		mapTypeId: google.maps.MapTypeId.SATELLITE,
+		mapId: "DEMO_MAP_ID",
+	  });
 
-      // Add a marker at the specified position
-      const marker = new google.maps.Marker({
-        map: map,
-        position: position,
-        title: "Uluru",
-      });
-    }
+	  // The marker, positioned at wide water
+	  const marker = new AdvancedMarkerElement({
+		map: map,
+		position: position,
+		title: "Uluru",
+	  });
+	}
+
+	initMap();
 	
 	// ***********	When page is reloaded, starts at top of page	*********** //
 	window.addEventListener('beforeunload', function() 
