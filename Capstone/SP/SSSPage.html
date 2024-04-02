@@ -99,7 +99,7 @@
     });
 	
 	
-/************************************	Google Map	***********************************/
+/************************************	Google Map	**********************************
 	let map;
 
     async function initMap() {
@@ -119,7 +119,29 @@
         position: position,
         title: "Uluru",
       });
-    }
+    }*/
+	<script>
+        let map;
+
+        function initMap() {
+            const position = { lat: 41.42457414942667, lng: -83.94126615802391 };
+
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: position,
+                zoom: 12,
+            });
+
+            // Add a marker
+            const marker = new google.maps.Marker({
+                position: position,
+                map: map,
+                title: "Marker Title",
+            });
+        }
+
+        // Initialize the map when the page loads
+        window.onload = initMap;
+    </script>
 	
 	// ***********	When page is reloaded, starts at top of page	*********** //
 	window.addEventListener('beforeunload', function() 
