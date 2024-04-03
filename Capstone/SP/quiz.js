@@ -199,7 +199,7 @@ function validateAnswer10(nameInput) {
 	
 	/*document.getElementById('final-results').textContent = nameInput.value + " you got " + totalScore + " correct!";*/
 	var finalResults = document.getElementById('final-results');
-	finalResults.textContent = userName + "- your final score is: " + totalScore;
+	finalResults.textContent = userName + "- your final score is: " + totalScore + " / 10";
 }
 
 /************************************	Other Javascript	************************************/
