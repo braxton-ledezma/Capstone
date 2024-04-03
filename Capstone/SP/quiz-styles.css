@@ -164,8 +164,16 @@ fieldset
 	transition-timing-function: ease-in;
 }
 
-#home-button:hover
+#home-button-hover
 {
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-timing-function: ease-in;
+	transition-timing-function: ease-in;
+}
+
+#home-button-hover:hover
+{	
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
@@ -266,6 +274,11 @@ fieldset
 	.summary
 	{
 		width: 80%;
+	}
+	
+	.s-1
+	{
+		font-size: 30px;
 	}
 	
 	[class^="q-"]
