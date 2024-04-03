@@ -172,6 +172,15 @@ fieldset
 }
 
 
+#home-button:visited {
+   color: black;
+}
+
+#home-button:focus {
+   color: black;
+}
+
+
 /************************************	Question Styles	************************************/
 [class^="question-"] /*.summary*/
 {
@@ -217,16 +226,6 @@ fieldset
 	transform: scale(1.1);
 }
 
-
-#home-button a:visited {
-   color: black;
-}
-
-#home-button a:focus {
-   color: black;
-}
-
-
 @media screen and (max-width: 750px) {
 	
 	#form-begin-text
@@ -246,7 +245,9 @@ fieldset
 	}
 	form
 	{
-		margin: 5px;
+		margin-top: 5px;
+		margin-left: -10px;
+		margin-right: -10px;
 	}
 	
 	#name 
@@ -260,6 +261,22 @@ fieldset
 		width: 100px;
 		height: 40px;
 		margin-bottom: 0;
+	}
+	
+	.summary
+	{
+		width: 80%;
+	}
+	
+	[class^="q-"]
+	{
+		font-size: 15px;
+	}
+	
+	[id^="a-"]
+	{
+		font-size: 15px;
+		padding-bottom: 15px;
 	}
 }
 @media screen and (max-width: 400px) {
