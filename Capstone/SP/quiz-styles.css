@@ -17,7 +17,7 @@ form
     align-items: center;
 	object-fit: cover;
 	
-	margin: 50px;
+	margin: 5px;
 	margin-top: 150px;
 	height: 100%;
 }
@@ -164,7 +164,7 @@ fieldset
 	transition-timing-function: ease-in;
 }
 
-#home-button a:hover
+#home-button:hover
 {
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
@@ -218,10 +218,54 @@ fieldset
 }
 
 
-#next-button, #home-button a:visited {
+#home-button a:visited {
    color: black;
 }
 
-#next-button, #home-button  a:focus {
+#home-button a:focus {
    color: black;
+}
+
+
+@media screen and (max-width: 750px) {
+	
+	#form-begin-text
+	{
+		font-size: 90%;
+	}
+	
+	.Starter-Page
+	{
+		padding: 25px;
+	}
+	
+	#name-label
+	{
+	  font-size: 15px; 
+	  margin-left: 10%;
+	}
+	form
+	{
+		margin: 5px;
+	}
+	
+	#name 
+	{
+	  width: 80%; 
+	  font-size: 15px;
+	}
+	
+	#begin-button
+	{
+		width: 100px;
+		height: 40px;
+		margin-bottom: 0;
+	}
+}
+@media screen and (max-width: 400px) {
+	legend
+	{
+		font-size: 20px;
+	}
+
 }
