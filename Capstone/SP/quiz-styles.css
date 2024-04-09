@@ -137,8 +137,14 @@ fieldset
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
+/*
 #starter-home:link,
 #starter-home:visited {
+   color: black;
+}*/
+}
+a#starter-home:link,
+a#starter-home:visited {
    color: black;
 }
 
