@@ -290,7 +290,7 @@ input#begin-button
 	transform: scale(1.1);
 }
 
-input#next-button,
+input#next-button
 {
 	color: black;
 }
