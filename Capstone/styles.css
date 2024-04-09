@@ -343,7 +343,7 @@ nav.sitenavigation li.navlogo
 	transition-timing-function: ease-in;
 }
 
-a.SSSBox
+a.SSSBox:link
 {
 	color: black;
 }
