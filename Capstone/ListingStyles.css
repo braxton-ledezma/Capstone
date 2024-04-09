@@ -88,6 +88,11 @@
 	transition-timing-function: ease-in;
 }
 
+[class^="b-"]:link
+{
+	color: black;
+}
+
 [class^="b-"]:hover
 {
 	-ms-transform: scale(1.1);
