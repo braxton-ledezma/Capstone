@@ -264,6 +264,11 @@ input#begin-button
 	text-align: left;
 }
 
+input#next-button
+{
+	color: black;
+}
+
 #next-button 
 {
 	margin-top: 20px;
@@ -290,10 +295,6 @@ input#begin-button
 	transform: scale(1.1);
 }
 
-input#next-button
-{
-	color: black;
-}
 
 
 @media screen and (max-width: 750px) {
