@@ -2,7 +2,6 @@ body
 {
 	margin: 0;
 	padding: 0;
-	color: black;
 }
 
 /************************************	Background Holder	************************************/
@@ -150,6 +149,10 @@ fieldset
    color: black;
 }
 
+input#begin-button
+{
+	color: black;
+}
 
 #begin-button
 {
