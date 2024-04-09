@@ -149,10 +149,6 @@ fieldset
    color: black;
 }
 
-input#begin-button
-{
-	color: black;
-}
 
 #begin-button
 {
@@ -166,6 +162,7 @@ input#begin-button
 	width: 120px;
 	cursor: pointer;
 	font-size: 20px;
+	color: black !important;
 	
 	-webkit-transition-duration: 0.2s;
 	transition-duration: 0.2s;
