@@ -343,8 +343,15 @@ nav.sitenavigation li.navlogo
 	transition-timing-function: ease-in;
 }
 
-.SSSBox a:link, 
+/*.SSSBox a:link, 
 .SSSBox a:visited
+{
+	text-decoration: none;
+	color: black;
+}*/
+
+a.SSSBox:link, 
+a.SSSBox:visited
 {
 	text-decoration: none;
 	color: black;
