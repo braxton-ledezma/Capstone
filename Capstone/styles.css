@@ -342,11 +342,6 @@ nav.sitenavigation li.navlogo
 	-webkit-transition-timing-function: ease-in;
 	transition-timing-function: ease-in;
 }
-.SSSBox a:link
-{
-	color: red;
-}
-
 .SSSBox a:link, 
 .SSSBox a:visited
 {
