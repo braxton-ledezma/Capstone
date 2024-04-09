@@ -32,12 +32,6 @@ legend
 	border-radius: 25px;
 }
 
-
-input 
-{
-	color: black;
-}
-
 fieldset
 {
 	max-width: 80%;
@@ -153,6 +147,11 @@ fieldset
 
 #starter-home:focus {
    color: black;
+}
+
+input#begin-button
+{
+	color: black;
 }
 
 #begin-button
