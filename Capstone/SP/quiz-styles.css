@@ -149,6 +149,10 @@ fieldset
    color: black;
 }
 
+input#begin-button
+{
+	color: black;
+}
 
 #begin-button
 {
