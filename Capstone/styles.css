@@ -336,12 +336,15 @@ nav.sitenavigation li.navlogo
 	padding: 20px 25px;
 	text-decoration: none;
 	display: inline-block;
-	color: black;
 	
 	-webkit-transition-duration: 0.2s;
 	transition-duration: 0.2s;
 	-webkit-transition-timing-function: ease-in;
 	transition-timing-function: ease-in;
+}
+.SSSBox a
+{
+	color: red;
 }
 
 .SSSBox a:link, 
