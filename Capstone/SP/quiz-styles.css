@@ -2,6 +2,7 @@ body
 {
 	margin: 0;
 	padding: 0;
+	color: black;
 }
 
 /************************************	Background Holder	************************************/
@@ -162,7 +163,6 @@ fieldset
 	width: 120px;
 	cursor: pointer;
 	font-size: 20px;
-	color: black !important;
 	
 	-webkit-transition-duration: 0.2s;
 	transition-duration: 0.2s;
