@@ -326,6 +326,7 @@ nav.sitenavigation li.navlogo
 	text-align: centered;
 	padding-top: 25px;
 	margin-top: 25px;
+	color: black;
 }
 
 .SSSBox
@@ -342,19 +343,13 @@ nav.sitenavigation li.navlogo
 	-webkit-transition-timing-function: ease-in;
 	transition-timing-function: ease-in;
 }
-a.SSSBox:link
-a.SSSBox:visited
-{
-	text-decoration: none;
-	color: black;
-}
 
-/*.SSSBox a:link, 
+.SSSBox a:link, 
 .SSSBox a:visited
 {
 	text-decoration: none;
 	color: black;
-}*/
+}
 .SSSBox:hover 
 {
    -ms-transform: scale(1.1);
