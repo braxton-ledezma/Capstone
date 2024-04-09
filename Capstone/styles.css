@@ -343,16 +343,18 @@ nav.sitenavigation li.navlogo
 	transition-timing-function: ease-in;
 }
 a.SSSBox:link
-{
-	color: black;
-}
-
-.SSSBox a:link, 
-.SSSBox a:visited
+a.SSSBox:visited
 {
 	text-decoration: none;
 	color: black;
 }
+
+/*.SSSBox a:link, 
+.SSSBox a:visited
+{
+	text-decoration: none;
+	color: black;
+}*/
 .SSSBox:hover 
 {
    -ms-transform: scale(1.1);
