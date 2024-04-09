@@ -32,6 +32,12 @@ legend
 	border-radius: 25px;
 }
 
+
+input 
+{
+	color: black;
+}
+
 fieldset
 {
 	max-width: 80%;
@@ -161,7 +167,6 @@ fieldset
 	width: 120px;
 	cursor: pointer;
 	font-size: 20px;
-	color: black;
 	
 	-webkit-transition-duration: 0.2s;
 	transition-duration: 0.2s;
