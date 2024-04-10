@@ -10,7 +10,6 @@ body {
 .image-container {
 	width: 102%;
 	/*margin-top: -350px;*/
-	margin-left: -10px;
 	height: 850px; 
 	overflow: hidden; 
 	position: relative;
@@ -37,7 +36,7 @@ body {
 		width: 105%;
 	}
 }
-@media (max-width: 500px)
+@media (max-width: 550px)
 {
 	.image-container
 	{	
@@ -49,7 +48,7 @@ body {
 {
 	.image-container
 	{	
-		width: 111%;
+		width: 108%;
 	}
 }
 		
@@ -57,7 +56,7 @@ body {
 /************************************	Picture text	************************************/
 .picture-text {
 	padding-bottom: 70px;
-	padding-top: 200px;
+	padding-top: 100px;
 	text-align: center;
 	color: white;
 	
@@ -123,16 +122,7 @@ body {
 	}
 }
 
-/*footer {
-	background-color: rgba(0, 0, 0, 0.5);
-	text-align: center;
-}
 
-footer p {
-	padding: 1px;
-	color: white;
-	text-align: right;
-} */
 
 
 /************************************	Header	************************************/
@@ -145,12 +135,7 @@ header {
 	width: 100%;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 	z-index: 1000;
-	/*justify-content: space-between;
 
-	
-
-	/*border-radius: 30px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);*/
 }
 
 .logo img {
@@ -163,7 +148,7 @@ header {
 {
 	header
 	{	
-		width: 100%;
+		width: 102%;
 	}
 
 }
@@ -181,7 +166,7 @@ header {
 
 nav
 {
-	width: 100%;
+	width: 102%;
 	text-align: right;
 }
 
@@ -237,56 +222,7 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
 nav.sitenavigation li.active a {
 	color: #007bff; 
 }
-/*
-/*nav {
-	display: flex;
-	align-items: center;
-}
-.sitenavigation {
-	list-style: none;
-	color: black;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	margin-left: auto;
-	margin-right: 50px;
-	
-}
-.sitenavigation li
-{
-	border-radius: 13px;
-	margin-left: 30px;
-	
-	padding: 10px 15px;
-}
 
-.sitenavigation li:hover {
-	background-color: deepskyblue;
-	-ms-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-	text-align: center;
-}
-
-.sitenavigation li a{
-	font-family: Arial, sans-serif;
-	text-align: right;
-	margin-right: 20px;
-	text-decoration: none;
-	color: black;
-}
-.sitenavigation li:not(:last-child) a {
-}
-
-/*	color for active tab, aka blue	*/
-/*.sitenavigation li.Home a {
-	color: #007bff; 
-}
-/*
-.sitenavigation li:not(.active):hover a {
-color: red; 
-}*/
-		
 /************************************	Menu Button Switch	************************************/
 
 .bar {
@@ -331,7 +267,7 @@ color: red;
 	{
 		display: block;
 		z-index: 1001;
-		margin-right: 40px;
+		margin-right: 30px;
 	}
 	
 	/* Expanded menu styles */
@@ -489,56 +425,63 @@ body.freeze-scroll {
 /* 
  * Optional: Makes the sample page fill the window. 
  */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
-
-
-	
 /************************************	Footer	************************************/
 .contact-info {
 	font-size: 16px;
 	text-align: center;
     color: black;
+	position: relative;
 }
 
 footer
 {
-	background-color: rgb(255,255,255, 0.7);
+	background-color: #E1EBEE;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-	
-	height: 75px;
-	width: 102%;
-
-	/*margin-top: 200px;*/
-	margin-left: -10px;
-	margin-bottom: -10px;
-	
+	width: 100%;
 	text-align: center;
-	padding-top: 15px;
-	
-}
-.footer-contents
-{
-	
-	font-size: 40px;
-	color: white;
-}
+    float: center;
 
+}
+.horizontal-line1 {
+position: absolute;
+  top: 50%;
+  left: 0;
+  width: 30%;
+  height: 2px; /* Adjust the height of the line as needed */
+  background-color: #36454F; /* Grey color */
+  transform: translateY(-50%);
+}
+.horizontal-line2 {
+position: absolute;
+  top: 50%;
+  right: 0;
+  width: 30%;
+  height: 2px; /* Adjust the height of the line as needed */
+  background-color: #36454F; /* Grey color */
+  transform: translateY(-50%);
+}
+.glyphicon {
+	margin-bottom: 20px;
+}
 .insta
 {
-	padding-top: 15px;
-	height: 35px;
+	margin-top: 10px;
+	font-size: 36px;
+	width: 40px;
+	height: 40px;
+	
 }
 
 .facebook
 {
+	margin-top: 10px;
 	padding-left: 10px;
-	height: 35px;
+	height: 30px;
+	
+    width: 40px;
+	height: 40px;
+	
 }
 
 .insta:hover, .facebook:hover
@@ -553,28 +496,41 @@ footer
 }
 
 @media (max-width: 800px)
-{
-	footer
+{ 
+
+.picture-text {
+   padding: 5px;
+	}
+.horizontal-line1, .horizontal-line2 {
+    display: none; 
+  }	
+	
+footer
 	{	
 		width: 105%;
+		height: auto;
 	}
 }
 
 @media (max-width: 500px)
-{
+{ 
 	footer
-	{	
+	{	height: 110%;
 		width: 107%;
 	}
-	
+.horizontal-line1, .horizontal-line2, {
+    display: none; /* Hide the line on smaller screens */
+  }
+
 	.footer-contents
 	{	
 		font-size:  25px;
 	}
-	.insta, .facebook
-	{	
-		height: 25px;
-	}
+    .insta, .facebook {
+        width: 20px; 
+        height: 20px; 
+        margin-right: 20px; 
+    }
 	#team-members
 	{
 		font-size:  20px;
@@ -587,4 +543,5 @@ footer
 
 ::-webkit-scrollbar {
   display: none;
+}
 }
