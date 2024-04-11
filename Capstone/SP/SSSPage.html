@@ -58,18 +58,14 @@
 
 <footer>
 	<div class="contact-info">
-     <div class="horizontal-line1"> </div>
-		<a href="https://www.instagram.com/"><img class="insta" src="images/instaw.png"></img></a>
-		<a href="https://www.facebook.com/"><img class="facebook" src="images/facebookLogo.png"></img></a>
-		<div class="contact"> <i class="fa fa-phone" style="font-size:22px;color: black"></i>Phone </button>: 419-308-5678 </div>
-		 <div class="contact">  <span class="glyphicon">&#x2709;</span> Email </button>: jeffridenour@outlook.com </div>
-      <div class="horizontal-line2"> </div>
+        <p>Email: info@example.com|Phone: 123-456-7890</p>
     </div>
 </footer>
 
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 <script>
 //part of google maps
 (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
@@ -106,11 +102,12 @@
 	
 	
 /************************************	Google Map	***********************************/
+	// Initialize and add the map
 	let map;
 
 	async function initMap() {
 	  // The location of Uluru
-	  const position = { lat: 41.42457414942667, lng: -83.94126615802391 };
+	  const position = { lat: 41.42465086527561, lng: -83.94132399007212 };
 	  // Request needed libraries.
 	  //@ts-ignore
 	  const { Map } = await google.maps.importLibrary("maps");
@@ -120,11 +117,11 @@
 	  map = new Map(document.getElementById("map"), {
 		zoom: 18,
 		center: position,
-		mapTypeId: google.maps.MapTypeId.SATELLITE,
+		mapTypeId: "satellite",
 		mapId: "DEMO_MAP_ID",
 	  });
 
-	  // The marker, positioned at wide water
+	  // The marker, positioned at Uluru
 	  const marker = new AdvancedMarkerElement({
 		map: map,
 		position: position,
@@ -134,14 +131,8 @@
 
 	initMap();
 	
-	// ***********	When page is reloaded, starts at top of page	*********** //
-	window.addEventListener('beforeunload', function() 
-	{
-		  window.scrollTo(0, 0);
-	})
 	
-	
-	/************************************	Google Map eror message	***********************************/
+	/************************************	Google Map error message	**********************************
 	function initMap() {
             var mapOptions = {
                 center: { lat: -34.397, lng: 150.644 },
@@ -155,6 +146,6 @@
                 // Google Maps API failed to load
                 document.getElementById('map').innerHTML = 'Error loading Google Maps. Please try again later.';
             }
-        });
+        });*/
 </script>
 </html>

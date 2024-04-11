@@ -558,14 +558,14 @@ function displayIncorrectQuestions() {
 
 
 
-/************************************	Other Javascript	***********************************
+/************************************	Other Javascript	************************************/
  
  window.addEventListener('beforeunload', function(event) {
-    if (document.querySelector(".Starter-Page").style.display !== 'block') {
+    if (document.querySelector(".summary").style.display !== 'block') {
         event.preventDefault();
         event.returnValue = '';
         var confirmationMessage = 'Are you sure you want to leave this page?';
         (event || window.event).returnValue = confirmationMessage;
         return confirmationMessage;
     }
-});*/
+});
