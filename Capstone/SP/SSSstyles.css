@@ -504,41 +504,57 @@ body {
 	font-size: 16px;
 	text-align: center;
     color: black;
+	position: relative;
 }
 
 footer
 {
-	background-color: rgb(255,255,255, 0.7);
+	background-color: #E1EBEE;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-	
-	height: 75px;
-	width: 102%;
-
-	/*margin-top: 200px;*/
-	margin-left: -10px;
-	margin-bottom: -10px;
-	
+	width: 100%;
 	text-align: center;
-	padding-top: 15px;
-	
-}
-.footer-contents
-{
-	
-	font-size: 40px;
-	color: white;
-}
+    float: center;
 
+}
+.horizontal-line1 {
+position: absolute;
+  top: 50%;
+  left: 0;
+  width: 30%;
+  height: 2px; /* Adjust the height of the line as needed */
+  background-color: #36454F; /* Grey color */
+  transform: translateY(-50%);
+}
+.horizontal-line2 {
+position: absolute;
+  top: 50%;
+  right: 0;
+  width: 30%;
+  height: 2px; /* Adjust the height of the line as needed */
+  background-color: #36454F; /* Grey color */
+  transform: translateY(-50%);
+}
+.glyphicon {
+	margin-bottom: 20px;
+}
 .insta
 {
-	padding-top: 15px;
-	height: 35px;
+	margin-top: 10px;
+	font-size: 36px;
+	width: 40px;
+	height: 40px;
+	
 }
 
 .facebook
 {
+	margin-top: 10px;
 	padding-left: 10px;
-	height: 35px;
+	height: 30px;
+	
+    width: 40px;
+	height: 40px;
+	
 }
 
 .insta:hover, .facebook:hover
