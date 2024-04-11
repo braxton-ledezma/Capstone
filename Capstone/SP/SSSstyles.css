@@ -569,28 +569,41 @@ position: absolute;
 }
 
 @media (max-width: 800px)
-{
-	footer
+{ 
+
+.picture-text {
+   padding: 5px;
+	}
+.horizontal-line1, .horizontal-line2 {
+    display: none; 
+  }	
+	
+footer
 	{	
 		width: 105%;
+		height: auto;
 	}
 }
 
 @media (max-width: 500px)
-{
+{ 
 	footer
-	{	
+	{	height: 110%;
 		width: 107%;
 	}
-	
+.horizontal-line1, .horizontal-line2, {
+    display: none; /* Hide the line on smaller screens */
+  }
+
 	.footer-contents
 	{	
 		font-size:  25px;
 	}
-	.insta, .facebook
-	{	
-		height: 25px;
-	}
+    .insta, .facebook {
+        width: 20px; 
+        height: 20px; 
+        margin-right: 20px; 
+    }
 	#team-members
 	{
 		font-size:  20px;
