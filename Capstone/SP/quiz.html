@@ -14,6 +14,8 @@
 	</header>
 	
 	<form>
+		<!-- This section is for the start page to where it will be shown to the user when they click on the "Staff Quiz".
+		This will display to enter a name, a go back to home page button, and a start button to start the quiz -->
 		<fieldset class="Starter-Page">
 			<legend><div class="legend-background">Preparing Quiz</div></legend>
 			<label id="form-begin-text">Once you begin the quiz, you must finish it before exiting!</label>
@@ -26,11 +28,15 @@
 				<input id="begin-button" type="button" value="Begin" onclick="return validateForm()">
 			</div>
 		</fieldset>
-		
+		<!-- It is repeat through out this line of code for each question.Every fieldset id the same as the last.-->
 		<fieldset class="question-1">
+
+			<!-- Underneath is the question number and the question that is being asked to the user.-->
 			<legend class="q-1">1. In the middle of the night, you hear a loud thud coming from one of the rooms. 
 			As you check the room, you see one of the campers face down on the floor. What do you do?</legend>
 				<div class="picture-container-1"><img class="image-one" src="images/quizPic-1.png"></div>
+			
+			<!-- These are the set of answers that go with the question above. Every label is a answer under each question-->
 			<label id="a-1" for="option-1">
 				<input type="radio" id="option-1" name="answer" value="a1" class="w-1">
 				Walk away from camper		
@@ -291,7 +297,7 @@
 			</label>
 				<input id="next-button" type="button" value="Next" onclick="validateAnswer10()">
 		</fieldset>
-		
+		<!-- This is the summary of the quiz. Which will display the name of the user and the score they have. -->
 		<fieldset class="summary">
 			<legend class="s-1">Quiz Summary</legend>
 			<p id="final-results"></p>
